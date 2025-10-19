@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>About Me</title>
+  <meta name="description" content="About me and contact.">\
+</head>
+<body>
+  <header>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="blogs.html">Blogs</a></li>
+        <li><a href="about.html">About me</a></li>
+        <li><a href="experiments.html">(experiment)</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>About Me</h1>
+
+    <section>
+      <h2>Name</h2>
+      <p>Personal Intro: I study ECE at UCSD (ML & Data Science track).</p>
+      <p>Edu exp: Zhejiang University - Energy & Env Systems Eng, GPA 3.75/4.0; UCSD MS ECE (expected 2026)</p>
+    </section>
+
+    <section aria-labelledby="contact">
+      <h2 id="contact">Contact me</h2>
+
+      <form action="#" method="post" aria-label="contact form">
+        <fieldset>
+          <legend>Contact form</legend>
+
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name">
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com">
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4"></textarea>
+
+          <button type="submit">Send</button>
+        </fieldset>
+      </form>
+    </section>
+
+    <footer>
+      <p>Download resume: <a href="#" download>Resume (pdf)</a></p>
+    </footer>
+  </main>
+
+  <!-- progress example -->
+  <progress value="70" max="100">70%</progress>
+</body>
+</html>
