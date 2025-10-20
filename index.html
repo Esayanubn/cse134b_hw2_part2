@@ -5,21 +5,17 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Kefan's Portfolio - Home</title>
   <meta name="description" content="Personal portfolio homepage.">
-  <link rel="stylesheet" href="#" />
   <script>
     /* hello-world custom element logs to console (allowed JS for this part) */
     class HelloWorld extends HTMLElement {
       connectedCallback(){ console.log("Hello world! (from <hello-world>)"); }
     }
     customElements.define('hello-world', HelloWorld);
-
-    /* simple semantic custom element (no JS needed) */
-    class MyCard extends HTMLElement {}
-    customElements.define('my-card', MyCard);
   </script>
 </head>
 <body>
   <header>
+    
     <nav aria-label="Main navigation">
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -29,47 +25,62 @@
         <li><a href="experiments.html">(experiment)</a></li>
       </ul>
     </nav>
+    <hr>
   </header>
 
   <main>
-    <h1>Welcomes to the Portfolio of Kefan Xu</h1>
+    <h1>Welcomes to the Portfolio of Kefan Xu 
+        <svg width="40" height="40" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="20" r="18" stroke="black" fill="none"/>
+            <text x="10" y="25" font-size="12">KX</text>
+        </svg>
+    </h1>
 
     <section>
-      <h2 id="intro">Intro & Motto</h2>
-      <p><strong>Name:</strong> Kefan Xu</p>
-      <p><strong>Hometown:</strong> Wenling Taizhou Zhejiang China</p>
+        <h2 id="intro">Intro & Motto</h2>
+        <table >
+        <tr>
+            <td>
+            <p>Hi I'm <strong> Kefan Xu</strong></p>
+            <p> <i>"一生分の長さを ざっと115万キロ"</i> </p>
+            
+            <p><em>Motto:Everything is the best plan</em> </p>
+            </td>
+            <td>
+            <picture>
+                <source srcset="assets/img/avatar.jpg" type="image/webp">
+                <img src="assets/img/avatar.jpg" alt="avatar" width="120">
+            </picture>
+            </td>
+        </tr>
+        </table>
+        <p><strong>Hometown:</strong> Wenling Taizhou Zhejiang China</p>
         <iframe 
             width="425" 
             height="350" 
             src="https://www.openstreetmap.org/export/embed.html?bbox=120.84686279296876%2C27.449790329784214%2C122.48931884765626%2C29.224096165685427&amp;layer=mapnik" 
         ></iframe>
-        <p><em>Motto:</em> Continual learning & practical projects</p>
+        
+        
 
-      <my-card>
-        <!-- custom semantic element: styling specific to this tag can be added later -->
         <h3>Highlights</h3>
         <ul>
-          <li>Projects: ML, Web, AI Infra</li>
-          <li>Education: UCSD MS ECE</li>
+            <li>🎓 MS in ECE at UCSD (Machine Learning & Data Science Track)</li>
+            <li>💼 Software Developer Intern at AntGroup (Enterprise Risk) & Ericsson (Automation Tools)</li>
+            <li>🔬 Research: Recommender Systems, Deep Learning, Chaos Engineering</li>
+            <li>⚡ Projects: RISC-V OS, TCP Protocol, Library Management System</li>
+            <li>🌐 Skills: Python, Java, C/C++, PyTorch, Docker, Kubernetes</li>
         </ul>
-      </my-card>
 
-      <figure>
-        <picture>
-          <source srcset="" type="image/webp">
-          <img src="" alt="Profile photo placeholder" width="120" height="120">
-        </picture>
-        <figcaption>Profile photo (placeholder)</figcaption>
-      </figure>
       <p><a href="about.html">more detail about me</a></p>
     </section>
 
     <section >
       <h2 id="projects">Featured Projects</h2>
       <ul>
-        <li>Project1 — short summary </li>
-        <li>Project2 — short summary</li>
-        <li>Project3 — short summary</li>
+        <li>🎵 Amazon Music Recommender System — Collaborative filtering & deep learning with PyTorch</li>
+        <li>🖥️ Mini RISC-V OS — Complete OS implementation with process scheduling & virtual memory</li>
+        <li>🌐 TCP Connection Protocol — High-performance network protocol achieving 190 Mbit/s</li>
       </ul>
       <p><a href="projects.html">view more</a></p>
     </section>
@@ -77,14 +88,30 @@
     <section>
       <h2 id="blogs">Latest blog posts</h2>
       <ol>
-        <li><a href="blogs/blog1/index.html">Blog 1</a></li>
-        <li><a href="blogs/blog2/index.html">Blog 2</a></li>
+        <li><a href="blogs/blog1/index.html">Modern Web Development: Building Scalable Applications</a></li>
+        <li><a href="blogs/blog2/index.html">LLMs for Programming: The Future of Code Generation</a></li>
       </ol>
       <p><a href="blogs.html">view more</a></p>
     </section>
 
+    <section>
+      <h2>Extra points: MathML: E = mc²</h2>
+      <!-- MathML markup for extra credit -->
+      <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+        <mi>E</mi>
+        <mo>=</mo>
+        <mi>m</mi>
+        <msup><mi>c</mi><mn>2</mn></msup>
+      </math>
+
+      <p>
+        <!-- brief explanation about MathML support -->
+        Historically MathML was not widely used because browser support was incomplete. Recent browsers have improved support, but cross-browser consistency was a past barrier.
+      </p>
+    </section>
+
     <footer>
-      <p>social links · copyright</p>
+      <p>📧 kefan_xu@outlook.com | 📱 +1 (858) 518-4216</p>
       <p>© 2025 Kefan Xu</p>
     </footer>
   </main>
